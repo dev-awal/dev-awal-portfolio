@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#todo-wrapper {
+    border: 1px solid beige;
+    margin: 100px auto;
+    padding-top: 10px;
+    width: 500px;
+    text-align: center;
+    min-height: 700px;
+    background-color: beige;
+    box-shadow: 0 3px 5px 0px rgba(15, 15, 15, 0.42) ;
+
+}
+
+#blocktitle {
+    border: 1px solid rgb(77, 74, 74);
+    width: 85%;
+    margin: 10px auto;
+    color: rgb(119, 119, 122);
+    background-color: rgb(77, 74, 74);
+}
+
+.lbl {
+    position: relative;
+    text-align: center;
+}
+
+input {
+    width: 80%;
+    height: 40px;
+    border: none;
+    padding: 0 90px 0 15px;
+}
+
+button {
+    position: absolute;
+    width: 80px;
+    height: 40px;
+    right: 0;
+    background-color: rgb(176, 207, 118);
+    
+} 
