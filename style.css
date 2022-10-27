@@ -5,6 +5,10 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 #header {
     display: flex;
     justify-content: space-between;
@@ -114,12 +118,13 @@ button a:hover {
     padding-top: 20px;
 }
 
-.portfolio {
-    height: 1000px;
+#project {
+    max-width: 95%;
+    border: 1px solid black;
+    height: 700px;
+    margin: 0 auto;
     background: linear-gradient(white, #f18888);
 }
-
-
 
 
 /*pratcicing media queries. to be deleted later*/
