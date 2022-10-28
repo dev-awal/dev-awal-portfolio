@@ -63,7 +63,7 @@ html {
     border: 1px solid  rgb(241, 136, 136);
 }
 
-button a {
+#body-pt1 button a {
     text-decoration: none;
     color: white;
 }
@@ -73,7 +73,7 @@ button a {
     background-color: white;
 }
 
-button a:hover {
+#body-pt1 button a:hover {
     color: #f18888;
 }
 
@@ -118,41 +118,45 @@ button a:hover {
     padding-top: 20px;
 }
 
-#projects {
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     max-width: 95%;
-    border: 1px solid black;
-    height: 700px;
     margin: 0 auto;
     background: linear-gradient(white, #f18888);
 }
 
 #project-wrapper {
-    display: flex;
+    text-align: center;
     margin: 50px;
-    border: 1PX solid black;
-    width: 350px;
-    height: 350px;
-    
-    border-radius: 10%
+    background-color: #e78ca8;
+    width: 250px;
+    height: 250px;
+    border-radius: 10%;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+#project-wrapper :hover {
+    background-color: #e97d9e;
 }
 
 #project img {
     display: block;
-    max-width: 95%;
-    margin: 5px;
-}
-
-#project span {
-    display: block;
-    width: 95%;
-    margin: 0 auto;
+    margin: 27px auto 10px ;
+    max-width: 200px;
 }
 
 #project-name {
-    margin: 0 50px;
-    width: 350px;
+    padding: 5px 5px;
     border: 1px solid black;
-    border-radius: 20px;
+    background-color: black;
+    color: #e78ca8;
+}
+
+#project-name a {
+    text-decoration: none;
+    color: #e78ca8;
 }
 
 /*pratcicing media queries. to be deleted later*/
