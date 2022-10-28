@@ -16,7 +16,7 @@ html {
     color: darkcyan;
 }
 
-span {
+#logo span {
     background-color: darkcyan;
     color: white;
 }
@@ -118,7 +118,7 @@ button a:hover {
     padding-top: 20px;
 }
 
-#project {
+#portfolio {
     max-width: 95%;
     border: 1px solid black;
     height: 700px;
@@ -126,6 +126,34 @@ button a:hover {
     background: linear-gradient(white, #f18888);
 }
 
+#project-wrapper {
+    display: flex;
+    margin: 50px;
+    border: 1PX solid black;
+    width: 350px;
+    height: 350px;
+    
+    border-radius: 10%
+}
+
+#project img {
+    display: block;
+    max-width: 95%;
+    margin: 5px;
+}
+
+#project span {
+    display: block;
+    width: 95%;
+    margin: 0 auto;
+}
+
+#project-name {
+    margin: 0 50px;
+    width: 350px;
+    border: 1px solid black;
+    border-radius: 20px;
+}
 
 /*pratcicing media queries. to be deleted later*/
 
