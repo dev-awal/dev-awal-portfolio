@@ -1,24 +1,32 @@
-// let newList = document.getElementById('input').value;
 
 document.getElementById("btn").addEventListener("click", makeList);
 
 function makeList() {
     
-    let newList = document.getElementById('input').value;
+    let activity = document.getElementById('input').value;
 
-    var checkbox = document.createElement('input');
-    checkbox.setAttribute("type", "checkbox");
+    if (activity === '') {
+        document.getElementById("btn").disabled = true;
+    } 
+    else {
 
-    var list = document.createElement('p');
-    list.innerHTML = newList
-    var listWrapper = document.createElement("div");
+        var checkbox = document.createElement('input');
+        checkbox.setAttribute("type", "checkbox");
 
-    // append variables to the div then to the body
-    listWrapper.appendChild(checkbox);
-    listWrapper.appendChild(list);
-    document.getElementById('todo-wrapper').appendChild(listWrapper);
+        var newActivity = document.createElement('p');
+        newActivity.innerHTML = activity
+        var wrapper = document.createElement("div");
+        wrapper.setAttribute("id", "activityWrapper");
+
+        // append variables to the div then to the body
+        wrapper.appendChild(checkbox);
+        wrapper.appendChild(newActivity);
+        document.getElementById('todo-wrapper').appendChild(wrapper);
 
 
-    // clear input field 
-    document.getElementById('input').value = '';
+        // clear input field 
+        document.getElementById('input').value = '';
+        document.getElementById("btn").disabled = false;
+        }
+    document.getElementById("btn").disabled = false;
 }
