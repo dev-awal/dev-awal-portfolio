@@ -183,8 +183,15 @@ html {
 
 /*pratcicing media queries. to be deleted later*/
 
-/* @media only screen and (max-width: 600px){
-    body {
-        background-color: lightcoral;
+@media only screen and (max-width: 600px){
+    #header {
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        flex-direction: column;
     }
-}  */
+    #navbar li {
+        display: block;
+        margin: 25px auto;
+    }
+} 
